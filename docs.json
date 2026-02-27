@@ -34,7 +34,7 @@
       {"anchor": "Web", "href": "https://www.mapadosaber.com.br", "icon": "globe"}
     ]
   },
-  "logo": {"light": "/logo/light.svg", "dark": "/logo/dark.svg"},
+  "logo": {"light": "https://raw.githubusercontent.com/Allanbzrra/docs/main/logo/light.svg", "dark": "https://raw.githubusercontent.com/Allanbzrra/docs/main/logo/dark.svg"},
   "navbar": {
     "links": [
       {"label": "App", "href": "https://app.mapadosaber.com.br"},
