@@ -1,0 +1,9 @@
+/* Oculta o branding "Suportado por mintlify" no footer */
+footer a[href*="mintlify"] {
+  display: none !important;
+}
+
+/* Oculta o container pai do link (evita espaço vazio) */
+footer div:has(> a[href*="mintlify"]) {
+  display: none !important;
+}

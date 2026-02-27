@@ -9,77 +9,93 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Conheça nosso site",
+          "href": "https://www.mapadosaber.com.br",
+          "icon": "globe",
+          "fontColor": "#16A34A"
+        }
+      ]
+    },
+    "languages": [
       {
-        "tab": "Guia Mapa",
-        "groups": [
+        "language": "pt-BR",
+        "default": true,
+        "tabs": [
           {
-            "group": "Visão geral",
-            "pages": [
-              "guia-mapa/introducao",
-              "guia-mapa/home"
+            "tab": "Guia Mapa",
+            "groups": [
+              {
+                "group": "Visão geral",
+                "pages": [
+                  "guia-mapa/introducao",
+                  "guia-mapa/home"
+                ]
+              },
+              {
+                "group": "Exames",
+                "pages": [
+                  "guia-mapa/procurar-exames",
+                  "guia-mapa/meu-exame"
+                ]
+              },
+              {
+                "group": "Planejamento",
+                "pages": [
+                  "guia-mapa/ciclo-de-estudos",
+                  "guia-mapa/calendario",
+                  "guia-mapa/historico-de-eventos"
+                ]
+              },
+              {
+                "group": "Estudo e exercícios",
+                "pages": [
+                  "guia-mapa/exercicios-questoes"
+                ]
+              },
+              {
+                "group": "Assinatura",
+                "pages": [
+                  "guia-mapa/planos",
+                  "guia-mapa/metodos-de-pagamento"
+                ]
+              },
+              {
+                "group": "Atlas AI",
+                "pages": [
+                  "guia-mapa/acessando-atlas-ai"
+                ]
+              }
             ]
           },
           {
-            "group": "Exames",
-            "pages": [
-              "guia-mapa/procurar-exames",
-              "guia-mapa/meu-exame"
-            ]
-          },
-          {
-            "group": "Planejamento",
-            "pages": [
-              "guia-mapa/ciclo-de-estudos",
-              "guia-mapa/calendario",
-              "guia-mapa/historico-de-eventos"
-            ]
-          },
-          {
-            "group": "Estudo e exercícios",
-            "pages": [
-              "guia-mapa/exercicios-questoes"
-            ]
-          },
-          {
-            "group": "Assinatura",
-            "pages": [
-              "guia-mapa/planos",
-              "guia-mapa/metodos-de-pagamento"
-            ]
-          },
-          {
-            "group": "Atlas AI",
-            "pages": [
-              "guia-mapa/acessando-atlas-ai"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Guia Atlas IA",
-        "groups": [
-          {
-            "group": "Visão geral",
-            "pages": [
-              "guia-atlas-ia/introducao"
-            ]
-          },
-          {
-            "group": "Organizar",
-            "pages": [
-              "guia-atlas-ia/pastas",
-              "guia-atlas-ia/materiais"
-            ]
-          },
-          {
-            "group": "Estudar",
-            "pages": [
-              "guia-atlas-ia/podcasts",
-              "guia-atlas-ia/criar-questoes",
-              "guia-atlas-ia/flashcards",
-              "guia-atlas-ia/mapas-mentais",
-              "guia-atlas-ia/resumos"
+            "tab": "Guia Atlas IA",
+            "groups": [
+              {
+                "group": "Visão geral",
+                "pages": [
+                  "guia-atlas-ia/introducao"
+                ]
+              },
+              {
+                "group": "Organizar",
+                "pages": [
+                  "guia-atlas-ia/pastas",
+                  "guia-atlas-ia/materiais"
+                ]
+              },
+              {
+                "group": "Estudar",
+                "pages": [
+                  "guia-atlas-ia/podcasts",
+                  "guia-atlas-ia/criar-questoes",
+                  "guia-atlas-ia/flashcards",
+                  "guia-atlas-ia/mapas-mentais",
+                  "guia-atlas-ia/resumos"
+                ]
+              }
             ]
           }
         ]
@@ -102,10 +118,7 @@
   "navbar": {
     "links": [
       {
-        "label": "Web",
-        "href": "https://www.mapadosaber.com.br"
-      },
-      {
+        "icon": "envelope",
         "label": "Contato",
         "href": "mailto:contato@mapadosaber.com.br"
       }
@@ -116,22 +129,15 @@
       "href": "https://app.mapadosaber.com.br"
     }
   },
-  "contextual": {
-    "options": [
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
-  },
   "footer": {
     "socials": {
       "instagram": "https://www.instagram.com/somosmapadosaber"
     }
   },
   "search": {
-    "placeholder": "Pesquisar"
+    "prompt": "Pesquisar"
+  },
+  "contextual": {
+    "options": []
   }
 }
