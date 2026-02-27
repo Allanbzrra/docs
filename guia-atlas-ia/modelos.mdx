@@ -1,0 +1,42 @@
+---
+title: "Modelos"
+description: "Configuração de modelos de IA para diferentes propósitos"
+icon: "robot"
+---
+
+A página **Modelos** permite configurar quais modelos de IA são usados para cada tipo de tarefa no Atlas IA.
+
+<Warning>
+Esta página é acessível apenas para **administradores**.
+</Warning>
+
+## O que você encontra
+
+- **Listagem de modelos** — disponíveis por provedor
+- **Status de provedores** — se estão ativos e operacionais
+- **Modelos padrão** — por tipo de tarefa
+- **Tipos de modelo** — language, embedding, text_to_speech, speech_to_text
+
+## Tipos de modelo
+
+| Tipo | Uso |
+|------|-----|
+| **language** | Chat, respostas, geração de texto |
+| **embedding** | Busca vetorial, incorporação de conteúdo |
+| **text_to_speech** | Geração de podcasts |
+| **speech_to_text** | Transcrição de áudio |
+
+## Ações disponíveis
+
+| Ação | Descrição |
+|------|-----------|
+| **Visualizar** | Ver modelos e provedores |
+| **Configurar** | Definir modelo padrão por tipo |
+| **Ver status** | Status dos provedores |
+| **Atualizar** | Salvar configurações |
+
+## Particularidades
+
+- **Múltiplos provedores** — suporte a diferentes APIs de IA
+- **Acesso restrito** — apenas admin
+- **Componentes** — ProviderStatus, DefaultModelsSection, ModelTypeSection
