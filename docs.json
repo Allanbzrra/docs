@@ -11,39 +11,124 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guias",
+        "tab": "Guia Mapa",
         "groups": [
-          {"group": "Primeiros passos", "pages": ["index", "quickstart", "development"]},
-          {"group": "Personalização", "pages": ["essentials/settings", "essentials/navigation"]},
-          {"group": "Redação de conteúdo", "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/reusable-snippets"]},
-          {"group": "Ferramentas de IA", "pages": ["ai-tools/cursor", "ai-tools/claude-code", "ai-tools/windsurf"]}
+          {
+            "group": "Visão geral",
+            "pages": [
+              "guia-mapa/introducao",
+              "guia-mapa/home"
+            ]
+          },
+          {
+            "group": "Exames",
+            "pages": [
+              "guia-mapa/procurar-exames",
+              "guia-mapa/meu-exame"
+            ]
+          },
+          {
+            "group": "Planejamento",
+            "pages": [
+              "guia-mapa/ciclo-de-estudos",
+              "guia-mapa/calendario",
+              "guia-mapa/historico-de-eventos"
+            ]
+          },
+          {
+            "group": "Estudo e exercícios",
+            "pages": [
+              "guia-mapa/exercicios-questoes",
+              "guia-mapa/academia-do-saber"
+            ]
+          },
+          {
+            "group": "Assinatura",
+            "pages": [
+              "guia-mapa/planos",
+              "guia-mapa/metodos-de-pagamento"
+            ]
+          },
+          {
+            "group": "Atlas AI",
+            "pages": [
+              "guia-mapa/acessando-atlas-ai"
+            ]
+          }
         ]
       },
       {
-        "tab": "Referência da API",
+        "tab": "Guia Atlas IA",
         "groups": [
-          {"group": "Documentação da API", "pages": ["api-reference/introduction"]},
-          {"group": "Exemplos de endpoints", "pages": ["api-reference/endpoint/get", "api-reference/endpoint/create", "api-reference/endpoint/delete", "api-reference/endpoint/webhook"]}
+          {
+            "group": "Visão geral",
+            "pages": [
+              "guia-atlas-ia/introducao"
+            ]
+          },
+          {
+            "group": "Organizar",
+            "pages": [
+              "guia-atlas-ia/pastas",
+              "guia-atlas-ia/materiais"
+            ]
+          },
+          {
+            "group": "Estudar",
+            "pages": [
+              "guia-atlas-ia/podcasts",
+              "guia-atlas-ia/criar-questoes",
+              "guia-atlas-ia/flashcards",
+              "guia-atlas-ia/mapas-mentais",
+              "guia-atlas-ia/resumos"
+            ]
+          }
         ]
       }
     ]
   },
   "global": {
     "anchors": [
-      {"anchor": "App", "href": "https://app.mapadosaber.com.br", "icon": "mobile"},
-      {"anchor": "Web", "href": "https://www.mapadosaber.com.br", "icon": "globe"}
+      {
+        "anchor": "App",
+        "href": "https://app.mapadosaber.com.br",
+        "icon": "mobile"
+      },
+      {
+        "anchor": "Web",
+        "href": "https://www.mapadosaber.com.br",
+        "icon": "globe"
+      }
     ]
   },
-  "logo": {"light": "https://raw.githubusercontent.com/Allanbzrra/docs/main/logo/dark.svg", "dark": "https://raw.githubusercontent.com/Allanbzrra/docs/main/logo/light.svg"},
+  "logo": {
+    "light": "https://raw.githubusercontent.com/Allanbzrra/docs/main/logo/dark.svg",
+    "dark": "https://raw.githubusercontent.com/Allanbzrra/docs/main/logo/light.svg"
+  },
   "navbar": {
     "links": [
-      {"label": "App", "href": "https://app.mapadosaber.com.br"},
-      {"label": "Web", "href": "https://www.mapadosaber.com.br"},
-      {"label": "Contato", "href": "mailto:contato@mapadosaber.com.br"}
+      {
+        "label": "App",
+        "href": "https://app.mapadosaber.com.br"
+      },
+      {
+        "label": "Web",
+        "href": "https://www.mapadosaber.com.br"
+      },
+      {
+        "label": "Contato",
+        "href": "mailto:contato@mapadosaber.com.br"
+      }
     ],
-    "primary": {"type": "button", "label": "Acessar App", "href": "https://app.mapadosaber.com.br"}
+    "primary": {
+      "type": "button",
+      "label": "Acessar App",
+      "href": "https://app.mapadosaber.com.br"
+    }
   },
-  "contextual": {"options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]},
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]
+  },
   "footer": {
     "socials": {
       "instagram": "https://www.instagram.com/somosmapadosaber"
