@@ -38,8 +38,7 @@
           {
             "group": "Estudo e exercícios",
             "pages": [
-              "guia-mapa/exercicios-questoes",
-              "guia-mapa/academia-do-saber"
+              "guia-mapa/exercicios-questoes"
             ]
           },
           {
@@ -90,11 +89,6 @@
   "global": {
     "anchors": [
       {
-        "anchor": "App",
-        "href": "https://app.mapadosaber.com.br",
-        "icon": "mobile"
-      },
-      {
         "anchor": "Web",
         "href": "https://www.mapadosaber.com.br",
         "icon": "globe"
@@ -107,10 +101,6 @@
   },
   "navbar": {
     "links": [
-      {
-        "label": "App",
-        "href": "https://app.mapadosaber.com.br"
-      },
       {
         "label": "Web",
         "href": "https://www.mapadosaber.com.br"
@@ -127,11 +117,21 @@
     }
   },
   "contextual": {
-    "options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]
+    "options": [
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
       "instagram": "https://www.instagram.com/somosmapadosaber"
     }
+  },
+  "search": {
+    "placeholder": "Pesquisar"
   }
 }
