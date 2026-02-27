@@ -1,33 +1,34 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+> Para conhecimento de componentes, configuração e padrões do Mintlify, o skill já está instalado em `.agents/skills/mintlify`.
 
-# Documentation project instructions
+# Instruções do projeto de documentação — Mapa do Saber
 
-## About this project
+## Sobre este projeto
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Run `mint dev` to preview locally
-- Run `mint broken-links` to check links
+- Site de documentação construído com [Mintlify](https://mintlify.com)
+- Páginas são arquivos MDX com frontmatter YAML
+- Configuração em `docs.json`
+- `mint dev` para preview local
+- `mint broken-links` para verificar links
 
-## Terminology
+## Terminologia (Mapa do Saber)
 
-<!-- Add product-specific terms and preferred usage -->
-<!-- Example: Use "workspace" not "project", "member" not "user" -->
+- **Admin** = painel administrativo Laravel (mapa-do-saber-admin) — uso interno, apenas administradores; não é foco da documentação pública
+- **App** = aplicativo React/Vite (mapa-do-saber-app) — https://app.mapadosaber.com.br
+- **Web** = site Next.js (mapa-do-saber-web) — https://www.mapadosaber.com.br
+- Use "workspace" para o monorepo; "projeto" para admin/app/web individual
+- Preferir "usuário" a "member" em português
 
-## Style preferences
+## Preferências de estilo
 
-<!-- Add any project-specific style rules below -->
+- Voz ativa e segunda pessoa ("você")
+- Frases concisas — uma ideia por frase
+- Títulos em sentence case
+- **Negrito** para elementos de UI: Clique em **Configurações**
+- Formatação em código para nomes de arquivos, comandos, caminhos e referências
+- Documentação em **português (pt-BR)**
 
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+## Limites de conteúdo
 
-## Content boundaries
-
-<!-- Define what should and shouldn't be documented -->
-<!-- Example: Don't document internal admin features -->
+- Documentar APIs públicas, guias de uso e integração
+- Não documentar rotinas internas de admin ou detalhes de implementação sensíveis
+- Admin é acessado apenas por administradores — manter como conhecimento de regras, não destacar na doc

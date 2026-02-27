@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Mapa do Saber",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,112 +11,42 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Guias",
         "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+          {"group": "Primeiros passos", "pages": ["index", "quickstart", "development"]},
+          {"group": "Personalização", "pages": ["essentials/settings", "essentials/navigation"]},
+          {"group": "Redação de conteúdo", "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/reusable-snippets"]},
+          {"group": "Ferramentas de IA", "pages": ["ai-tools/cursor", "ai-tools/claude-code", "ai-tools/windsurf"]}
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Referência da API",
         "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+          {"group": "Documentação da API", "pages": ["api-reference/introduction"]},
+          {"group": "Exemplos de endpoints", "pages": ["api-reference/endpoint/get", "api-reference/endpoint/create", "api-reference/endpoint/delete", "api-reference/endpoint/webhook"]}
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+  "global": {
+    "anchors": [
+      {"anchor": "App", "href": "https://app.mapadosaber.com.br", "icon": "mobile"},
+      {"anchor": "Web", "href": "https://www.mapadosaber.com.br", "icon": "globe"}
+    ]
   },
+  "logo": {"light": "/logo/light.svg", "dark": "/logo/dark.svg"},
   "navbar": {
     "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
+      {"label": "App", "href": "https://app.mapadosaber.com.br"},
+      {"label": "Web", "href": "https://www.mapadosaber.com.br"},
+      {"label": "Contato", "href": "mailto:contato@mapadosaber.com.br"}
     ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "primary": {"type": "button", "label": "Acessar App", "href": "https://app.mapadosaber.com.br"}
   },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
+  "contextual": {"options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]},
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "instagram": "https://www.instagram.com/somosmapadosaber"
     }
   }
 }
