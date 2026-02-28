@@ -58,16 +58,42 @@
           { "group": "Visão geral", "pages": ["guia-atlas-ia/introducao"] },
           {
             "group": "Organizar",
-            "pages": ["guia-atlas-ia/pastas", "guia-atlas-ia/materiais"]
+            "pages": [
+              "guia-atlas-ia/pastas",
+              "guia-atlas-ia/pasta-individual",
+              "guia-atlas-ia/materiais"
+            ]
           },
           {
             "group": "Estudar",
             "pages": [
               "guia-atlas-ia/podcasts",
+              "guia-atlas-ia/videos",
               "guia-atlas-ia/criar-questoes",
               "guia-atlas-ia/flashcards",
               "guia-atlas-ia/mapas-mentais",
               "guia-atlas-ia/resumos"
+            ]
+          },
+          {
+            "group": "Buscar",
+            "pages": ["guia-atlas-ia/busca-perguntar"]
+          },
+          {
+            "group": "Avaliador",
+            "pages": [
+              "guia-atlas-ia/redacao",
+              "guia-atlas-ia/questoes-exatas",
+              "guia-atlas-ia/questoes-subjetivas"
+            ]
+          },
+          {
+            "group": "Gerenciar",
+            "pages": [
+              "guia-atlas-ia/modelos",
+              "guia-atlas-ia/transformacoes",
+              "guia-atlas-ia/configuracoes",
+              "guia-atlas-ia/avancado"
             ]
           }
         ]

@@ -1,45 +1,64 @@
 ---
 title: "Questões Subjetivas"
-description: "Extraia e corrija questões dissertativas com IA"
+description: "Extraia questões dissertativas e receba correção automática"
 icon: "clipboard-check"
 ---
 
-**Questões Subjetivas** extrai questões dissertativas de materiais e permite que você responda e receba correção por IA.
+**Questões Subjetivas** extrai perguntas dissertativas de materiais, permite que você responda em texto livre e recebe avaliação automática com pontuação e feedback.
+
+<Frame>
+  <img src="/images/gif-notebook-subjetivas.gif" alt="Tela de Questões Subjetivas do Atlas IA" />
+</Frame>
 
 ## Como funciona
 
-1. **Selecione um material** — pasta ou fonte.
-2. A IA **extrai questões subjetivas** do material.
-3. **Inicie o quiz** — responda cada questão.
-4. **Envie as respostas** — a IA corrige.
-5. **Veja o feedback** — detalhado por questão.
-6. **Consulte o resumo** — pontuação e estatísticas.
+1. **Selecione um material** (pasta ou fonte) como base.
+2. A IA **extrai questões subjetivas** do conteúdo.
+3. **Inicie o quiz** — responda cada pergunta em texto livre.
+4. **Envie as respostas** para avaliação.
+5. **Veja o feedback** por questão com pontuação.
+6. **Consulte o resumo final** com score total.
 
-## O que você encontra
+## Modo quiz
 
-- **Extração** — questões subjetivas de materiais
-- **Quiz** — modo de respostas
-- **Correção automática** — feedback da IA
-- **Resumo** — pontuação e estatísticas
-- **Múltiplas tentativas** — refaça o quiz
-- **MaterialSelectorDialog** — escolher material de origem
+- Uma questão por vez
+- Campo de texto livre para a resposta
+- Feedback imediato após envio de cada resposta
+- Navegação entre questões
+
+## O que o feedback inclui
+
+| Item | Descrição |
+|------|-----------|
+| **Pontuação** | Score da resposta (ex: 7/10) |
+| **Resposta ideal** | O que a IA consideraria correto |
+| **Análise** | Comparação entre sua resposta e o modelo |
+| **Sugestões** | Como melhorar a resposta |
+
+## Resumo final
+
+Ao concluir todas as questões, veja:
+
+- Score total (N pontos de M possíveis)
+- Percentual de acerto
+- Revisão detalhada questão por questão
 
 ## Ações disponíveis
 
 | Ação | Descrição |
 |------|-----------|
-| **Extrair** | Obter questões de um material |
-| **Responder** | Escrever respostas no quiz |
+| **Extrair questões** | Selecionar material de origem |
+| **Responder** | Digitar resposta no quiz |
 | **Enviar** | Submeter para correção |
-| **Ver feedback** | Ler correção por questão |
-| **Ver resumo** | Pontuação e estatísticas |
-| **Refazer** | Nova tentativa |
+| **Ver feedback** | Ler avaliação por questão |
+| **Ver resumo** | Score e estatísticas finais |
+| **Refazer quiz** | Nova tentativa do zero |
 
 ## Particularidades
 
-- **Sistema de pontuação** — score por questão
-- **Múltiplas tentativas** — refaça para melhorar
-- **Controle de limites** — conforme assinatura (grade_subjective)
+- **Avaliação de texto livre** — a IA avalia respostas abertas
+- **Múltiplas tentativas** — refaça para melhorar a pontuação
+- **Controle de limites** — consome crédito `grade_subjective`
 
 <Info>
 O plano RSC pode ocultar toda a seção Avaliador, incluindo Questões Subjetivas.

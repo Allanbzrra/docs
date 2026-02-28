@@ -1,42 +1,49 @@
 ---
-title: "Modelos"
-description: "Configuração de modelos de IA para diferentes propósitos"
+title: "Modelos de IA"
+description: "Configure os modelos usados para cada tipo de tarefa"
 icon: "robot"
 ---
 
-A página **Modelos** permite configurar quais modelos de IA são usados para cada tipo de tarefa no Atlas IA.
+A página **Modelos** permite configurar quais modelos de IA são usados para cada tipo de operação no Atlas IA — chat, embeddings, geração de áudio e transcrição.
+
+<Frame>
+  <img src="/images/gif-notebook-modelos.gif" alt="Tela de Modelos do Atlas IA" />
+</Frame>
 
 <Warning>
 Esta página é acessível apenas para **administradores**.
 </Warning>
 
-## O que você encontra
-
-- **Listagem de modelos** — disponíveis por provedor
-- **Status de provedores** — se estão ativos e operacionais
-- **Modelos padrão** — por tipo de tarefa
-- **Tipos de modelo** — language, embedding, text_to_speech, speech_to_text
-
 ## Tipos de modelo
 
-| Tipo | Uso |
-|------|-----|
-| **language** | Chat, respostas, geração de texto |
-| **embedding** | Busca vetorial, incorporação de conteúdo |
-| **text_to_speech** | Geração de podcasts |
-| **speech_to_text** | Transcrição de áudio |
+| Tipo | Usado em |
+|------|----------|
+| **Language (LLM)** | Chat, questões, resumos, redação, análises |
+| **Embedding** | Busca vetorial, indexação de materiais |
+| **Text-to-Speech** | Geração de podcasts e vídeos |
+| **Speech-to-Text** | Transcrição de áudio |
+
+## Status dos provedores
+
+Cada provedor de IA (OpenAI, Anthropic, Google, etc.) tem um indicador de status:
+
+- **Online** — conectado e funcionando
+- **Offline** — sem conexão ou chave inválida
+
+## Modelos padrão
+
+Configure qual modelo é usado por padrão em cada tipo de operação. Isso afeta todo o sistema para todos os usuários.
 
 ## Ações disponíveis
 
 | Ação | Descrição |
 |------|-----------|
-| **Visualizar** | Ver modelos e provedores |
-| **Configurar** | Definir modelo padrão por tipo |
-| **Ver status** | Status dos provedores |
+| **Ver status** | Verificar provedores ativos |
+| **Configurar padrão** | Definir modelo padrão por tipo |
 | **Atualizar** | Salvar configurações |
 
 ## Particularidades
 
-- **Múltiplos provedores** — suporte a diferentes APIs de IA
-- **Acesso restrito** — apenas admin
-- **Componentes** — ProviderStatus, DefaultModelsSection, ModelTypeSection
+- **Acesso restrito** — apenas administradores
+- **Impacto global** — mudanças afetam todos os usuários
+- **Múltiplos provedores** — OpenAI, Anthropic, Google, Ollama, etc.

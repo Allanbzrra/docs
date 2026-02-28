@@ -1,0 +1,68 @@
+---
+title: "Buscar e Perguntar"
+description: "Busca textual, vetorial e chat com toda a base de conhecimento"
+icon: "magnifying-glass"
+---
+
+**Buscar e Perguntar** permite pesquisar em todos os seus materiais e notas, ou fazer perguntas diretamente para a IA usando toda a base de conhecimento como contexto.
+
+<Frame>
+  <img src="/images/gif-notebook-busca-perguntar.gif" alt="Tela de Busca e Perguntar do Atlas IA" />
+</Frame>
+
+## Dois modos de uso
+
+### Modo Buscar
+
+Pesquisa direta nos seus materiais e notas.
+
+| Tipo | Descrição |
+|------|-----------|
+| **Textual** | Busca por palavras-chave exatas |
+| **Vetorial** | Busca por significado (semântica) — requer modelo de embedding configurado |
+
+**Onde buscar:**
+- Materiais (fontes)
+- Notas
+
+**O que cada resultado mostra:**
+- Título do material ou nota (clicável)
+- Score de relevância
+- Trechos que combinaram com a busca (expandíveis)
+
+### Modo Perguntar (Ask)
+
+A IA responde à sua pergunta usando os materiais e notas como contexto. O processamento ocorre em 3 etapas visíveis:
+
+1. **Estratégia** — busca contexto relevante nos materiais
+2. **Resposta** — gera resposta com base no contexto
+3. **Resposta Final** — refina e formata a resposta
+
+## Ações disponíveis
+
+| Ação | Descrição |
+|------|-----------|
+| **Buscar** | Pesquisar por texto ou vetor |
+| **Perguntar** | Fazer pergunta à IA |
+| **Expandir resultado** | Ver trechos que combinaram |
+| **Abrir material** | Navegar para a fonte diretamente |
+| **Salvar resposta** | Salvar em uma pasta como nota |
+| **Configurar modelos** | Escolher modelos para cada etapa |
+
+## Configuração avançada
+
+Você pode selecionar qual modelo é usado em cada etapa do modo Perguntar:
+
+- **Estratégia** — modelo para busca de contexto
+- **Resposta** — modelo para geração da resposta
+- **Resposta Final** — modelo para refinamento
+
+## Particularidades
+
+- **Link direto** — aceita parâmetros `?q=consulta&mode=search|ask` na URL
+- **Auto-execução** — se abrir com `?q=`, a busca é disparada automaticamente
+- **Streaming** — a resposta do modo Perguntar é exibida progressivamente
+
+<Note>
+A busca vetorial requer que os materiais tenham sido **processados** (embedded). Verifique o status de incorporação na tela de Materiais.
+</Note>

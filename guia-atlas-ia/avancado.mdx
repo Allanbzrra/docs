@@ -1,10 +1,14 @@
 ---
 title: "Avançado"
-description: "Ferramentas avançadas para administradores"
+description: "Ferramentas de manutenção e diagnóstico do sistema"
 icon: "screwdriver-wrench"
 ---
 
-A página **Avançado** reúne ferramentas de manutenção e utilitários para usuários avançados.
+A página **Avançado** reúne ferramentas de manutenção, diagnóstico de sistema e utilitários para administradores.
+
+<Frame>
+  <img src="/images/gif-notebook-avancado.gif" alt="Tela Avançada do Atlas IA" />
+</Frame>
 
 <Warning>
 Esta página é acessível apenas para **administradores**.
@@ -12,24 +16,31 @@ Esta página é acessível apenas para **administradores**.
 
 ## O que você encontra
 
-- **Informações do sistema** — versão, status, diagnóstico
-- **Rebuild de embeddings** — reprocessar incorporações vetoriais
-- **Utilitários** — outras ferramentas de manutenção
+### Informações do sistema
+- Versão atual do Atlas IA
+- Status de conectividade
+- Status dos modelos de IA configurados
+
+### Rebuild de embeddings
+Reprocessa os embeddings vetoriais de todos os materiais. Use quando:
+- Buscas vetoriais não retornam resultados esperados
+- Após migração de dados
+- Após troca de modelo de embedding
+
+### Utilitários
+- Limpeza de caches
+- Ferramentas de diagnóstico
 
 ## Ações disponíveis
 
 | Ação | Descrição |
 |------|-----------|
-| **Ver informações** | Consultar status do sistema |
-| **Rebuild embeddings** | Reprocessar embeddings de fontes |
-| **Utilitários** | Acessar ferramentas de manutenção |
-
-## Quando usar
-
-- **Rebuild embeddings** — quando buscas vetoriais não retornam resultados esperados ou após migração de dados
-- **Informações do sistema** — para diagnóstico de problemas
+| **Ver informações** | Status e versão do sistema |
+| **Rebuild embeddings** | Reprocessar incorporações vetoriais |
+| **Acompanhar progresso** | Barra de progresso do rebuild |
 
 ## Particularidades
 
-- **Acesso restrito** — apenas admin
-- **Ferramentas de manutenção** — use com cuidado
+- **Acesso restrito** — apenas administradores
+- **Rebuild com progresso** — barra visual acompanha o reprocessamento
+- **Use com cuidado** — operações podem demorar dependendo do volume de dados

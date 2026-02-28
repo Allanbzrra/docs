@@ -1,46 +1,67 @@
 ---
 title: "Questões de Exatas"
-description: "Resolva e corrija questões de matemática com IA"
+description: "Resolva questões de matemática com editor LaTeX e correção por IA"
 icon: "calculator"
 ---
 
-**Questões de Exatas** permite que você resolva questões de matemática e exatas, com correção automática por IA.
+**Questões de Exatas** extrai questões matemáticas de provas e documentos, permitindo resolver com editor LaTeX e receber correção detalhada passo a passo.
+
+<Frame>
+  <img src="/images/gif-notebook-questoes-exatas.gif" alt="Tela de Questões de Exatas do Atlas IA" />
+</Frame>
 
 ## Como funciona
 
-1. **Analise uma prova ou documento** — envie imagem ou PDF com questões.
-2. A IA **extrai as questões** do material.
-3. **Selecione uma questão** para resolver.
-4. **Use o editor LaTeX** para escrever sua solução.
-5. **Envie a resposta** para correção.
-6. **Veja o feedback** detalhado da IA.
+1. **Analise uma prova** — envie PDF ou documento com questões.
+2. A IA **extrai automaticamente** as questões de exatas.
+3. **Selecione uma questão** da lista.
+4. **Resolva** usando o editor LaTeX integrado.
+5. **Envie** para correção automática.
+6. **Veja o feedback** com passo a passo da solução correta.
 
-## O que você encontra
+## Editor LaTeX
 
-- **Análise de documento** — extração automática de questões
-- **Editor de matemática** — LaTeX para fórmulas e equações
-- **Correção automática** — feedback da IA
-- **Revisão de solução** — comparação com gabarito esperado
-- **Dificuldade e tópico** — metadados da questão
+O editor suporta notação matemática completa:
+
+- Frações, potências, raízes
+- Integrais, somatórios, limites
+- Matrizes e vetores
+- Renderização em tempo real
+
+## O que o feedback inclui
+
+- Se correto: confirmação com mensagem de sucesso
+- Se incorreto:
+  - Passo a passo da solução correta
+  - Identificação do erro cometido
+  - Explicação dos conceitos envolvidos
+
+## Metadados das questões
+
+Cada questão extraída mostra:
+
+| Campo | Descrição |
+|-------|-----------|
+| **Tópico** | Álgebra, Geometria, Cálculo, etc. |
+| **Dificuldade** | Fácil, Médio, Difícil |
+| **Enunciado** | Texto completo da questão |
 
 ## Ações disponíveis
 
 | Ação | Descrição |
 |------|-----------|
-| **Analisar** | Enviar prova/documento para extração |
-| **Selecionar** | Escolher questão para resolver |
+| **Analisar prova** | Enviar documento para extração |
+| **Selecionar questão** | Escolher qual resolver |
 | **Resolver** | Escrever no editor LaTeX |
-| **Enviar** | Submeter resposta |
-| **Ver feedback** | Ler correção da IA |
-| **Revisar** | Ver solução esperada |
-| **Excluir** | Remover questão |
+| **Enviar resposta** | Submeter para correção |
+| **Ver feedback** | Ler correção detalhada |
+| **Excluir questão** | Remover da lista |
 
-## Limites
+## Particularidades
 
-O uso de Questões de Exatas consome créditos em duas etapas:
-
-- **math_source** — análise do documento
-- **math_solution** — correção da resposta
+- **Dois créditos consumidos** — `math_source` (análise) e `math_solution` (correção)
+- **LaTeX renderizado** — visualização imediata das fórmulas
+- **Extração inteligente** — ignora questões de outras disciplinas
 
 <Info>
 O plano RSC pode ocultar toda a seção Avaliador, incluindo Questões de Exatas.
